@@ -11,7 +11,7 @@
 | ----------- | ----------- | ----------- | ----------- | ----------- | ----------- |
 | CUSTOMERID | Идентификатор покупателя | - | string | Y | customer.id |
 | ORDDATE | Дата оформления заказа | Формат YYYY.MM.DD HH:MM:SS | timestamp | Y | order.date |
-| AMOUNT | Количество товаров в заказе | - | number | Y | product.amount |
+| PRODUCTAMOUNT | Количество товаров в заказе | - | number | Y | product.amount |
 | PRODUCTNAME | Название товара | - | string | Y | product.name |
 | PAYMENTWAY | Способ оплаты | - | string | Y | order.payment |
 | DELIVERY | Способ получения | - | string | Y | order.wayOfGet |
@@ -36,7 +36,7 @@
 | ORDENDDATE | Дата выполнения заказа | Формат YYYY.MM.DD HH:MM:SS | timestamp | N | order.dateEnd |
 | ORDSTATUS | Статус заказа | - | string | Y | order.status |
 | ORDDATE | Дата оформления заказа | Формат YYYY.MM.DD HH:MM:SS | timestamp | Y | order.date |
-| AMOUNT | Количество товаров в заказе | - | number | Y | product.amount |
+| PRODUCTAMOUNT | Количество товаров в заказе | - | number | Y | product.amount |
 | PRODUCTNAME | Название товара | - | string | Y | product.name |
 | PAYMENTWAY | Способ оплаты | - | string | Y | order.payment |
 | DELIVERY | Способ получения | - | string | Y | order.wayOfGet |
