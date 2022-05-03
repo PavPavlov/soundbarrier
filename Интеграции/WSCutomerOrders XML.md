@@ -1,4 +1,6 @@
 ## Пример запроса
+```
+{
 <?xml version="1.0" encoding="utf-8"?>
 
 <ROW>
@@ -36,8 +38,11 @@
   <RECIEVER>Значение</RECIEVER>
 
 </ROW>
-
+}
+```
 ## Пример ответа
+```
+{
 <?xml version="1.0" encoding="utf-8"?>
 
 <ROW>
@@ -45,3 +50,5 @@
   <ORDERID>Значение</ORDERID>
   
 </ROW>
+}
+```
