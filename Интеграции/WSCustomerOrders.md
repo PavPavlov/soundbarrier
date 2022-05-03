@@ -7,38 +7,38 @@
 
 # Добавление нового заказа (#Add)
 Вызов
-| Поле | Название | Доп. описание | Обязательность | Маппинг |
-| ----------- | ----------- | ----------- | ----------- | ----------- |
-| CUSTOMERID | Идентификатор покупателя | - | Y | customer.id |
-| ORDDATE | Дата оформления заказа | Формат YYYY.MM.DD HH:MM:SS | Y | order.date |
-| AMOUNT | Количество товаров в заказе | number | Y | product.amount |
-| PRODUCTNAME | Название товара | string | Y | product.name |
-| PAYMENTWAY | Способ оплаты | string | Y | order.payment |
-| DELIVERY | Способ получения | string | Y | order.wayOfGet |
-| ADDRESS | Адрес доставки | string | Y | order.address / client.address |
-| RECIEVER | Получатель | string | Y | order.reciever |
+| Поле | Название | Доп. описание | Тип поля | Обязательность | Маппинг |
+| ----------- | ----------- | ----------- | ----------- | ----------- | ----------- |
+| CUSTOMERID | Идентификатор покупателя | - | string | Y | customer.id |
+| ORDDATE | Дата оформления заказа | Формат YYYY.MM.DD HH:MM:SS | timestamp | Y | order.date |
+| AMOUNT | Количество товаров в заказе | - | number | Y | product.amount |
+| PRODUCTNAME | Название товара | - | string | Y | product.name |
+| PAYMENTWAY | Способ оплаты | - | string | Y | order.payment |
+| DELIVERY | Способ получения | - | string | Y | order.wayOfGet |
+| ADDRESS | Адрес доставки | - | string | Y | order.address / client.address |
+| RECIEVER | Получатель | - | string | Y | order.reciever |
 Ответ
-| Поле | Название | Доп. описание | Обязательность | Маппинг |
-| ----------- | ----------- | ----------- | ----------- | ----------- |
-| ORDERID | Идентификатор заказа | - | Y | order.number |
-
-## Пример запроса
-
+| Поле | Название | Доп. описание | Тип поля | Обязательность | Маппинг |
+| ----------- | ----------- | ----------- | ----------- | ----------- | ----------- |
+| ORDERID | Идентификатор заказа | - | string | Y | order.number |
 
 # Загрузка списка заказов клиента (#Get)
 Вызов
-| Поле | Название | Доп. описание | Обязательность | Маппинг |
-| ----------- | ----------- | ----------- | ----------- | ----------- |
-| COCUSTOMERID | Идентификатор покупателя | - | Y | customer.id |
+| Поле | Название | Доп. описание | Тип поля | Обязательность | Маппинг |
+| ----------- | ----------- | ----------- | ----------- | ----------- | ----------- |
+| CUSTOMERID | Идентификатор покупателя | - | string | Y | customer.id |
 
 
 Ответ
-| Поле | Название | Доп. описание | Обязательность | Маппинг |
-| ----------- | ----------- | ----------- | ----------- | ----------- |
-| COORDERID | Идентификатор заказа | list-сущность с перечнем id всех заказов покупателя | Y | order.number |
-*в разрезе каждого заказа*
-| Поле | Название | Доп. описание | Обязательность | Маппинг |
-| ----------- | ----------- | ----------- | ----------- | ----------- |
-| COORDERID | Идентификатор заказа | list-сущность с перечнем id всех заказов покупателя | Y | order.number |
-| 1 | Дата выполнения заказа | string | order.dateEnd |
-| 4 | Статус заказа | string | order.status |
+| Поле | Название | Доп. описание | Тип поля | Обязательность | Маппинг |
+| ----------- | ----------- | ----------- | ----------- | ----------- | ----------- |
+| ORDERID | Идентификатор заказа | - | string | Y | order.number |
+| ORDENDDATE | Дата выполнения заказа | Формат YYYY.MM.DD HH:MM:SS | timestamp | N | order.dateEnd |
+| ORDSTATUS | Статус заказа | - | string | Y | order.status |
+| ORDDATE | Дата оформления заказа | Формат YYYY.MM.DD HH:MM:SS | timestamp | Y | order.date |
+| AMOUNT | Количество товаров в заказе | - | number | Y | product.amount |
+| PRODUCTNAME | Название товара | - | string | Y | product.name |
+| PAYMENTWAY | Способ оплаты | - | string | Y | order.payment |
+| DELIVERY | Способ получения | - | string | Y | order.wayOfGet |
+| ADDRESS | Адрес доставки | - | string | Y | order.address / client.address |
+| RECIEVER | Получатель | - | string | Y | order.reciever |
