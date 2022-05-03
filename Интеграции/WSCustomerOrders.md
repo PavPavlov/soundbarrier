@@ -9,18 +9,68 @@
 Вызов
 | Поле | Название | Доп. описание | Обязательность | Маппинг |
 | ----------- | ----------- | ----------- | ----------- | ----------- |
-| COCUSTOMERID | Идентификатор покупателя | - | Y | customer.id |
-| COORDDATE | Дата оформления заказа | Формат YYYY.MM.DD HH:MM:SS | Y | order.date |
-| COAMOUNT | Количество товаров в заказе | number | Y | product.amount |
-| COPRODUCTNAME | Название товара | string | Y | product.name |
-| COPAYMENTWAY | Способ оплаты | string | Y | order.payment |
-| CODELIVERY | Способ получения | string | Y | order.wayOfGet |
-| COADDRESS | Адрес доставки | string | Y | order.address / client.address |
-| CORECIEVER | Получатель | string | Y | order.reciever |
+| CUSTOMERID | Идентификатор покупателя | - | Y | customer.id |
+| ORDDATE | Дата оформления заказа | Формат YYYY.MM.DD HH:MM:SS | Y | order.date |
+| AMOUNT | Количество товаров в заказе | number | Y | product.amount |
+| PRODUCTNAME | Название товара | string | Y | product.name |
+| PAYMENTWAY | Способ оплаты | string | Y | order.payment |
+| DELIVERY | Способ получения | string | Y | order.wayOfGet |
+| ADDRESS | Адрес доставки | string | Y | order.address / client.address |
+| RECIEVER | Получатель | string | Y | order.reciever |
 Ответ
 | Поле | Название | Доп. описание | Обязательность | Маппинг |
 | ----------- | ----------- | ----------- | ----------- | ----------- |
-| COORDERID | Идентификатор заказа | - | Y | order.number |
+| ORDERID | Идентификатор заказа | - | Y | order.number |
+
+## Пример запроса
+'<?xml version="1.0" encoding="utf-8"?>
+
+<ROW>
+
+  <CUSTOMERID>Значение</CUSTOMERID>
+
+  <ORDDATE>Значение</ORDDATE>
+
+  <PRODUCTLIST>
+
+	<PRODUCT>
+
+<PRODUCTNAME>Значение</PRODUCTNAME>
+
+  		<AMOUNT>Значение</AMOUNT>
+
+</PRODUCT>
+
+<PRODUCT>
+
+<PRODUCTNAME>Значение</PRODUCTNAME>
+
+  		<AMOUNT>Значение</AMOUNT>
+
+</PRODUCT>
+
+  </PRODUCTLIST>
+
+  <PAYMENTWAY>Значение</PAYMENTWAY>
+
+  <DELIVERY>Значение</DELIVERY>
+
+  <ADDRESS>Значение</ADDRESS>
+
+  <RECIEVER>Значение</RECIEVER>
+
+</ROW>
+'
+
+## Пример ответа
+'<?xml version="1.0" encoding="utf-8"?>
+
+<ROW>
+
+  <ORDERID>Значение</ORDERID>
+  
+ </ROW>
+ '
 
 # Загрузка списка заказов клиента (#Get)
 Вызов
