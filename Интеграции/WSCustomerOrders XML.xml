@@ -1,7 +1,7 @@
 ## Пример запроса
 <?xml version="1.0" encoding="utf-8"?>
 
-<ROW>
+<WSCustomerOrdersInParms>
 
   <CUSTOMERID>Значение</CUSTOMERID>
 
@@ -11,19 +11,19 @@
 
 	<PRODUCT>
 
-<PRODUCTNAME>Значение</PRODUCTNAME>
+		<PRODUCTNAME>Значение</PRODUCTNAME>
 
   		<AMOUNT>Значение</AMOUNT>
 
-</PRODUCT>
+	</PRODUCT>
 
-<PRODUCT>
+	<PRODUCT>
 
-<PRODUCTNAME>Значение</PRODUCTNAME>
+		<PRODUCTNAME>Значение</PRODUCTNAME>
 
   		<AMOUNT>Значение</AMOUNT>
 
-</PRODUCT>
+	</PRODUCT>
 
   </PRODUCTLIST>
 
@@ -35,13 +35,13 @@
 
   <RECIEVER>Значение</RECIEVER>
 
-</ROW>
+</WSCustomerOrdersInParms>
 
 ## Пример ответа
 <?xml version="1.0" encoding="utf-8"?>
 
-<ROW>
+<WSCustomerOrdersInParms>
 
   <ORDERID>Значение</ORDERID>
   
-</ROW>
+</WSCustomerOrdersInParms>
