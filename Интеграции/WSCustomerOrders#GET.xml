@@ -1,1 +1,59 @@
+## Пример запроса
+<?xml version="1.0" encoding="utf-8"?>
 
+<WSCustomerOrdersInParms>
+
+  <CUSTOMERID>Значение</CUSTOMERID>
+
+</WSCustomerOrdersInParms>
+
+## Пример ответа
+<?xml version="1.0" encoding="utf-8"?>
+
+<WSCustomerOrdersInParms>
+  
+  <ORDERLIST>
+    
+    <ORDER>
+
+      <ORDERID>Значение</ORDERID>
+  
+      <ORDENDDATE>Значение</ORDENDDATE>
+  
+      <ORDSTATUS>Значение</ORDSTATUS>
+  
+      <ORDDATE>Значение</ORDDATE>
+  
+      <PRODUCTLIST>
+
+	      <PRODUCT>
+
+		      <PRODUCTNAME>Значение</PRODUCTNAME>
+
+  		    <AMOUNT>Значение</AMOUNT>
+
+	      </PRODUCT>
+          
+        <PRODUCT>
+
+		      <PRODUCTNAME>Значение</PRODUCTNAME>
+
+  		    <AMOUNT>Значение</AMOUNT>
+
+	      </PRODUCT>
+
+	    </PRODUCTLIST>
+  
+      <PAYMENTWAY>Значение</PAYMENTWAY>
+  
+      <DELIVERY>Значение</DELIVERY>
+  
+      <ADDRESS>Значение</ADDRESS>
+  
+      <RECIEVER>Значение</RECIEVER>
+      
+    </ORDER>
+    
+  </ORDERLIST>
+  
+</WSCustomerOrdersInParms>
