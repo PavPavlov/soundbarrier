@@ -18,6 +18,7 @@
 | DELIVERY | Способ получения | - | string | Y | order.wayOfGet |
 | ADDRESS | Адрес доставки | - | string | Y | order.address / client.address |
 | RECIEVER | Получатель | - | string | Y | order.reciever |
+
 Ответ
 | Поле | Название | Доп. описание | Тип поля | Обязательность | Маппинг |
 | ----------- | ----------- | ----------- | ----------- | ----------- | ----------- |
